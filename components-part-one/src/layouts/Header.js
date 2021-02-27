@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { 
     ParagraphTitle,
@@ -10,6 +10,12 @@ import {
 import PropTypes from 'prop-types';
 
 const Header = ({ className }) => {
+
+    /// Uncomment useEffect block to check ErrorBoundary functionality
+    // useEffect(() => {
+    //     throw new Error('This is an ERROR!!!')
+    // }, [])
+
     return (
         <div className={className}>
                 <Paragraph>netflixroulette</Paragraph>
