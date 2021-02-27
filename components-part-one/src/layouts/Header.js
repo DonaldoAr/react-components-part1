@@ -7,8 +7,9 @@ import {
     Button,
     Input
 } from './../styles'
+import PropTypes from 'prop-types';
 
-export const Header = ({ className }) => {
+const Header = ({ className }) => {
     return (
         <div className={className}>
                 <Paragraph>netflixroulette</Paragraph>
@@ -21,3 +22,9 @@ export const Header = ({ className }) => {
         </div>
     )
 }
+
+Header.propTypes = {
+    className: PropTypes.string.isRequired,
+}
+
+export  { Header }

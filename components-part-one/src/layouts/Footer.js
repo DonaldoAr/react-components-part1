@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
-export const Footer = ({ className }) => {
+const Footer = ({ className }) => {
     return (
         <div className={className}>
             <p>netflixroulette</p>
@@ -8,3 +9,8 @@ export const Footer = ({ className }) => {
     )
 }
 
+Footer.propTypes = {
+    className: PropTypes.string.isRequired,
+}
+
+export  { Footer }

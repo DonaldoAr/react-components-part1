@@ -6,5 +6,4 @@ export const HeaderContainer = styled(Header)`
     min-height: 30vh;
     max-height: 30vh;
     padding: 20px;
-//    justify-content: center;
 `
